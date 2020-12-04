@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com -->
+  <title>Quality Theorem</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../css/customer.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+        <a class="navbar-brand" href="/home">Quality Theorem</a>
+    </div>
+  </div>
+</nav>
+
+<div class="box">  
+  <h1 id="customer">Customer Detail's</h1>
+    <form class="contact-form" method ="POST" class="form" id="cform">
+        <div class="row">
+            <div class="column">      
+            <input type="text" class="form_input name " name="FirstName" id="fname" placeholder="Enter First Name" required oninvalid="this.setCustomValidity('Please Enter Your Name')" oninput="this.setCustomValidity('')">
+            </div>
+            <div class="column">      
+                <input type="text" class="form_input name " name="LastName" id="lname" placeholder="Enter Last Name" required oninvalid="this.setCustomValidity('Please Enter Your Name')" oninput="this.setCustomValidity('')">
+                </div>
+            <div class="column">
+            <input type= "tel" class="form_input phone " name="ContactNumber" id="contact" placeholder="Phone"  pattern="[1-9]{1}[0-9]{9}" required oninvalid="this.setCustomValidity('Please Enter Your Valid Phone Number')" oninput="this.setCustomValidity('')">
+            </div>
+            <div class="column">
+            <input type="email" class="form_input email" name="Emails" id="mail" placeholder="Email" required oninvalid="this.setCustomValidity('Please Enter Valid Email')" oninput="this.setCustomValidity('')">
+            </div>
+            <div class="column">
+            <input type="text" class="form_input company" name="CompanyNames" id="company" placeholder="Company Name" required oninvalid="this.setCustomValidity('Please Enter Your Valid Company Name')" oninput="this.setCustomValidity('')">
+            </div>
+            <div class="column">
+                <button type="submit">Submit</button>
+            </div>
+    </form>
+  </div>
+</div>
+
+<footer id="footer">
+    Copyright &copy 2020 QualityTheorem.com
+</footer>
+
+
+
+
+
+</body>
+</html>
+
+<!-- 
+<div class="box">  
+  <h1 id="customer">Customer Detail's</h1>
+    <form class="contact-form" method ="POST" class="form" id="cform">
+        <div class="row">
+            <div class="column">      
+            <input type="text" class="form_input name " name="FirstName" id="fname" placeholder="Enter First Name" required oninvalid="this.setCustomValidity('Please Enter Your Name')" oninput="this.setCustomValidity('')">
+            </div>
+            <div class="column">      
+                <input type="text" class="form_input name " name="LastName" id="lname" placeholder="Enter Last Name" required oninvalid="this.setCustomValidity('Please Enter Your Name')" oninput="this.setCustomValidity('')">
+                </div>
+            <div class="column">
+            <input type= "tel" class="form_input phone " name="ContactNumber" id="contact" placeholder="Phone"  pattern="[1-9]{1}[0-9]{9}" required oninvalid="this.setCustomValidity('Please Enter Your Valid Phone Number')" oninput="this.setCustomValidity('')">
+           
+            </div>
+            <div class="column">
+            <input type="email" class="form_input email" name="Emails" id="mail" placeholder="Email" required oninvalid="this.setCustomValidity('Please Enter Valid Email')" oninput="this.setCustomValidity('')">
+            
+            </div>
+            <div class="column">
+            <input type="text" class="form_input company" name="CompanyNames" id="company" placeholder="Company Name" required oninvalid="this.setCustomValidity('Please Enter Your Valid Company Name')" oninput="this.setCustomValidity('')">
+            
+            </div>
+            <div class="column">
+                <button type="submit">Submit</button>
+            </div>
+    </form>
+    
+</div>  -->

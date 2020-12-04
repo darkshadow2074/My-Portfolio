@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>CRUD Application</title>
+  <style>
+  *{
+    margin:0px;
+    padding:0px;
+  }
+  .data{
+    height:500px;
+    width:70%;
+   
+    margin-left:10%;
+    margin-top:50px;
+    padding:20px;
+    font-family:cursive; 
+  }
+  .table{
+    width:100%;
+   margin-top:20px;
+  }
+  th,td{
+    height:40px;
+    text-align:center;
+    
+  }
+  td{
+    padding:5px;
+    height: 40px;
+  }
+  .form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  input{
+    width:20%;
+    height: 20px;
+  }
+  button{
+    width: 30%;
+    height: 20px;
+  }
+
+  </style>
+</head>
+<body>
+  <div class="data">
+    <h1>SuperHeroes</h1>
+   <div class="form">
+      <form onsubmit="addUser(event)">
+      <input type="text"  id="name" required>
+      <input type="Number"  id="age" required>
+      <input type="text"  id="city" required>
+      <button id = "submit" type="submit">Add More </button>
+    </form>
+   </div> 
+   <div>
+     <form>
+       <input type="text"  id="search" placeholder="Search User" onkeyup="searchUser()">
+     </form>
+   </div>
+    <table border="1" class="table" cellspacing="0">
+      <thead>
+        <tr>
+          <th>Sr. No</th>
+          <th>Name</th>
+          <th>Age</th>
+          <th>City</th>
+          <th>Actions</th>
+        </tr>  
+      </thead>
+      <tbody id="tdata">
+        
+      </tbody>
+    </table>
+    
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script>
+    
+    let superHero =[ 
+    {name:"Akash",
+     age: 20,
+     city:"blr",
+    },
+    {name:"Ananya",
+     age: 18,
+     city:"Blr",
+    },
+    {name:"Abhishek",
+     age: 20,
+     city:"kolata",
+    },
+    {name:"Aman",
+     age: 21,
+     city:"vns",
+    },
+  ];
+  function display(superArray){
+    let tableData = "";
+    let serial = 1;
+    
+    superArray.forEach(function(superHero,index){
+      let curentRow =`<tr>
+                    <td>${serial}</td>
+                    <td>${superHero.name}</td>
+                    <td>${superHero.age}</td>
+                    <td>${superHero.city}</td>
+                    <td><button id="delete"  onclick="deleteUser(${index})">Delete</button></td>
+                    </tr>`;  
+      tableData= tableData + curentRow; 
+      serial++;
+    });
+    
+    document.querySelector("#tdata").innerHTML=tableData;
+ }
+ display(superHero);
+ 
+ function addUser(event){
+   event.preventDefault();
+   let newObj = {};
+   let name = document.getElementById("name").value;
+   let age = document.getElementById("age").value;
+   let city = document.getElementById("city").value;
+   newObj.name = name;
+   newObj.age=Number(age);
+   newObj.city=city;
+   superHero.push(newObj);
+   display(superHero);
+   document.getElementById("name").value= " ";
+   document.getElementById("age").value=" ";
+   document.getElementById("city").value=" ";
+
+ }
+
+ function searchUser(){
+  let search = document.getElementById("search").value;
+  let newArr = superHero.filter(function(sinput){
+    return (sinput.name.toUpperCase().indexOf(search.toUpperCase())!= -1);
+  })
+  display(newArr);
+ }
+ function deleteUser(index){
+  superHero.splice(index,1);
+  display(superHero);
+ }
+
+</script>
+</body>
+</html>

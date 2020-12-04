@@ -1,0 +1,119 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Quality Theorem</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../css/employee.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+  <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="/home">Quality Theorem</a>
+        </div>
+      </div>
+    </nav>
+    <div class="box">
+      <h1 id="employee">Employee Detail's</h1>  
+      <form class="contact-form" method="POST" class="form" id="eform">
+        <div class="row">
+          <div class="column">
+            <input
+              type="text"
+              class="form_input name"
+              name="FirstName"
+              id="fname"
+              placeholder="Enter your first name"
+              required
+              oninvalid="this.setCustomValidity('Please Enter Your Name')"
+              oninput="this.setCustomValidity('')"
+            />
+          </div>
+          <div class="column">
+            <input
+              type="text"
+              class="form_input name"
+              name="LastName"
+              id="lname"
+              placeholder="Enter your last name"
+              required
+              oninvalid="this.setCustomValidity('Please Enter Your Name')"
+              oninput="this.setCustomValidity('')"
+            />
+          </div>
+          <div class="column">
+            <input
+              type="tel"
+              class="form_input phone"
+              name="ContactNumbers"
+              id="contact"
+              placeholder="Phone"
+              pattern="[1-9]{1}[0-9]{9}"
+              required
+              oninvalid="this.setCustomValidity('Please Enter Your Valid Phone Number')"
+              oninput="this.setCustomValidity('')"
+            />
+          </div>
+          <div class="column">
+            <input
+              type="email"
+              class="form_input email"
+              name="Emails"
+              id="mail"
+              placeholder="Email"
+              required
+              oninvalid="this.setCustomValidity('Please Enter Your Valid Email')"
+              oninput="this.setCustomValidity('')"
+            />
+          </div>
+
+          <div class="column">
+            <input
+              type="text"
+              class="form_input qual"
+              name="Qualification"
+              id="qualification"
+              placeholder="Qualification"
+              required
+              oninvalid="this.setCustomValidity('Please Enter Your Qualifications')"
+              oninput="this.setCustomValidity('')"
+            />
+          </div>
+          <div class="column">
+            <input
+              type="text"
+              class="form_input des"
+              name="Designation"
+              id="designation"
+              placeholder="designation"
+              required
+              oninvalid="this.setCustomValidity('Please Enter Your Designation')"
+              oninput="this.setCustomValidity('')"
+            />
+          </div>
+
+          <div class="column">
+            <button type="submit">Submit</button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <footer id="footer">
+      Copyright &copy 2020 QualityTheorem.com
+    </footer>
+
+  </body>
+</html>
