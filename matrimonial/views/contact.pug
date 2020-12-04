@@ -1,0 +1,22 @@
+extends base.pug
+
+block scripts
+    script(src="../static/dance.js")
+
+block style
+     style 
+        include ../app.css    
+        include ../static/contact.css
+
+block content 
+  div#container
+      h1 Contact-Us 
+      form(action="/contact",method="post",class="myform")
+        input(type="text", class="name myInput", name = "Name",placeholder="Enter Your Name" )
+        input(type="number", class="age myInput", name = "Age",placeholder="Enter Your Age" )
+        input(type="text", class="sex myInput", name = "Sex",placeholder="Enter Your Gender" )
+        input(type="phone", class="number myInput", name = "Phone",placeholder="Enter Your Mobile No" )
+        input(type="email", class="mail myInput", name= "Email", placeholder= "Enter Your Email")
+        input(type="text", class="concern myInput", name= "Concern", placeholder= "Enter Your Concern" )
+        button     
+          | Submit     

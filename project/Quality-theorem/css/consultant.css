@@ -1,0 +1,115 @@
+
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font: 400 15px Lato, sans-serif;
+    line-height: 1.8;
+    background: url("../images/forms/consultant.jpg") center / cover no-repeat;
+}
+
+.navbar {
+    margin-bottom: 0 !important;
+    background-color: black !important;
+    z-index: 9999 !important;
+    border: 0 !important;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px !important;
+    border-radius: 0 !important;
+    font-family: Montserrat, sans-serif !important;
+}
+.navbar li a, .navbar .navbar-brand {
+    color: #fff !important;
+}
+.navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #f4511e !important;
+    background-color: #fff !important;
+}
+.box{
+    max-width: 70% !important;
+    margin: 20px auto 0px auto !important;
+    padding: 35px !important;
+    min-height: 50vh;
+    border-radius: 5px !important;
+}
+#consultant{
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    color: black;
+}
+
+form{
+    background: rgb(40 40 56 / 80%)  !important;
+    padding:25px;
+}
+
+
+.row{
+    display: flex !important;
+    flex-flow: wrap !important;
+    margin: 0px -15px !important;
+    justify-content: space-around !important;
+    align-items: center !important;
+
+}
+
+.column{
+    flex: 0 0 100% !important;
+    padding: 0px 15px !important;
+}
+.column .half{
+    flex:0 0 50% !;
+}
+input,textarea{
+    width: 65%  !important;
+    display:block !important;
+    padding: 15px 20px !important;
+    margin: 10px auto !important;
+    background-color: #fbfbfb !important;
+    border-radius: 5px !important;
+    font-size: 16px !important;
+    border: 0 !important;
+    outline: none;
+}
+textarea{
+    
+    height: 120px;
+    
+}
+button[type="submit"]{
+    display:block !important;
+    margin: 3px auto 0px auto !important;
+    width: 150px !important;
+    text-align: center !important;
+    cursor: pointer !important;
+    background-color: rgb(154, 255, 13) !important;
+    font-size: 20px !important;
+    outline: none;
+    border: none;
+    border-radius: 12px;
+    padding: 6px;
+}
+#footer{
+      background-color:#331212;
+      color: #8e8383;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 46px;
+      font-size: 24px;
+}
+
+
+
+@media screen and (max-width: 768px) {
+ 
+}
+@media screen and (max-width: 480px) {
+  
+}

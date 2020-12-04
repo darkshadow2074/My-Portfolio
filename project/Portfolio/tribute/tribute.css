@@ -1,0 +1,81 @@
+*{
+    box-sizing: border-box;
+    
+}
+body{
+    margin:0;
+    padding: 0;
+}
+#main{
+    position: relative;
+    top:80px;
+    padding:15px;
+    background: #eee;
+    margin:10px;
+}
+#title{
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Merienda One', cursive;
+}
+#title p{
+    font-family: 'Lobster Two', cursive;
+    font-size: 20px;
+}
+#img-div{
+    background-color:white;
+}
+#img-div img{
+    max-width: 100%;
+    height: auto;
+    margin:0 auto;
+   padding: 20px 35px;
+   display: block;
+}
+#img-div #img-caption{
+    text-align: center;
+    font-size: 15px;
+    padding-bottom: 15px;
+    font-family:  cursive;
+}
+#tribute-info h2{
+     font-size: 30px;
+     text-align: center;
+     padding-top: 15px;
+    }
+    #tribute-info ul{
+        
+        margin: 0 auto 50px auto;
+        max-width: 600px;
+    }
+   #tribute-info ul > li{
+   font-size: 25px;;
+    text-align: justify;
+    font-family: 'Cookie', cursive;
+}    
+#tribute-info ul > p{
+    margin-top: 40px;
+    font-size: 25px;
+}
+#tribute-info ul >p::before{
+    content:open-quote;
+
+}
+#tribute-info ul >p::after{
+    content:close-quote;
+}
+#tribute-info ul > cite{
+    text-align: center ;font-size:25px;
+}
+#tribute-info p{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+}
+@media all and (max-width:399px)
+{
+    html{
+        width: 400px;;
+    }
+}

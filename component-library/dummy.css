@@ -1,0 +1,509 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --primary: #dc2626;
+    --gray: #F3F4F6;
+    --light-pink:#FEE2E2;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    /* margin: 0px; */
+    background-color: var(--light-pink) ;
+}
+
+/** nav **/
+
+.navigation {
+    background-color: var(--primary);
+    padding: 1rem 0rem;
+    color: white;
+    
+}
+
+.navigation .nav-brand{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    filter: invert();
+}
+
+.navigation .nav-brand p{
+    padding-right: 8px;
+}
+
+.navigation .brand {
+    font-weight: bold;
+    
+}
+
+.navigation .navbar{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    font-size: 25px!important;
+    flex-wrap: nowrap;
+}
+
+.navigation .navbar .nav-head{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+}
+
+.navigation ul {
+    list-style: none;
+    text-align: right;
+}
+
+.navigation li {
+    display: inline-block;
+    padding: 0rem 0.8rem;;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: white
+}
+
+.navigation .active {
+    font-weight: bold;
+}
+
+
+/** header **/
+
+.hero {
+    background-color: var(--primary);
+    max-height: 58.2vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    padding-top: 2rem;
+}
+
+.hero .heading-div{
+    margin: auto;
+}
+.hero .welcome-zone{
+    text-align: center;
+    font-size: 47px;
+    text-shadow: 3px 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+.hero img {
+    max-width: 556px;
+    margin: auto;
+    display: block;
+}
+
+
+.section .about{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: justify;
+}
+
+.section .about .about-details{
+    max-width: 80%;
+    margin-right: 4rem;
+    line-height: 1.8;
+}
+.section .section-img{
+   
+    width:1000px;
+    height:auto;
+} a{
+    color:var(--primary)
+}
+
+.section .about a{
+    color:var(--primary);
+
+}
+
+.section .section-img img{
+    max-width: 100%;
+    margin:auto;
+    border-top-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+hr {
+    margin: 2rem 0;;
+}
+
+.text-sm {
+    font-size: 0.8rem;
+}
+
+/** containers **/
+.container{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.container-fluid {
+    margin: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    max-width: 600px;
+}
+
+/** links **/
+
+.primary-link {
+    text-decoration: none;
+    color: white;
+    background-color: var(--primary);
+    width: max-content;
+    min-width: 140px;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+}
+
+.secondary-link {
+    text-decoration: none;
+    color: var(--primary);
+    border: 1px solid var(--primary);
+    width: max-content;
+    min-width: 140px;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+}
+
+
+
+
+/** section **/
+
+.section {
+    padding: 4rem 0rem;
+}
+
+.section h2 {
+    text-align: center;
+    font-size: 34px;
+    font-weight: 500;
+}
+
+.section hr{
+    
+    width:30%;
+    font-weight: 500;
+    color: whitesmoke;
+    text-align: center;
+    margin: 1rem auto 2rem auto;
+}
+
+
+/*           HOBBIES & INTERESTS           */
+
+.ow {
+    background-color: var(--primary);
+}
+
+#hobbie{
+    max-width: 1200px;
+    display: block;
+    margin: 5rem auto 0 auto;
+}
+
+.section .hobbies{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+    text-align: center;
+    font-weight: 500 !important;
+}
+
+.section .hobbies .coding, .games, .gym{
+
+    background-color: whitesmoke;
+    color: var(--primary); 
+    min-width: 13.1%;
+    padding:5rem;
+    cursor: pointer;
+    font-size: 40px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 3px 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+.section .hobbies .coding:hover{
+    font-weight: 600;
+    background-color: var(--primary);
+    color: whitesmoke;
+}
+
+.section .hobbies .games:hover{
+    font-weight: 600;
+    background-color: var(--primary);
+    color: whitesmoke;
+}
+
+.section .hobbies .gym:hover{
+    font-weight: 600;
+    background-color: var(--primary);
+    color: whitesmoke;
+}
+
+.section .hobbies i{
+    padding-top: 8px;
+    color: black;
+    font-size: 30px;   
+}    
+
+/*           Qualifications           */
+
+#education{
+    background-color: var(--primary);
+    max-width: 1200px;
+    margin-top: 5rem;
+
+}
+
+.section .education{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    text-align: center;
+    font-weight: 500 !important;
+    padding: 2rem 10rem 1rem  10rem;
+}
+
+.section .education .primary-education, .secondary-education, .university{
+
+    background-color: whitesmoke;
+    color: var(--primary); 
+    min-width:23%;
+    padding:5rem;
+    cursor: pointer;
+    font-size: 27px;
+    text-shadow: 3px 2px 3px rgba(0, 0, 0, 0.2);
+   
+}
+
+.section .education .university{
+    justify-self: center;
+}
+
+.section .education .primary-education:hover{
+    background-color: var(--primary);
+    color: whitesmoke;
+}
+
+.section .education .secondary-education:hover{
+    background-color: var(--primary);
+    color: whitesmoke;
+}
+
+.section .education .university:hover{
+    background-color: var(--primary);
+    color: whitesmoke;
+}
+
+
+.section .education i{
+    font-size: 30px;
+    padding-bottom: 8px;
+    color: black;
+}
+
+.section .education .institue-name{
+
+    font-size: 23px;
+}
+.section .education p{
+    font-size: 16px;
+    padding-top: 7px;
+}
+
+
+
+/*           SKILLS           */
+
+
+.section .skills{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: 500 !important;
+}
+
+.section .skills .coding, .games, .gym{
+
+    background-color: whitesmoke;
+    color: var(--primary); 
+    min-width: 13.1%;
+    margin-top: 1rem;
+    padding:5rem;
+    cursor: pointer;
+    font-size: 40px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 3px 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+.section .skills .games{
+
+    font-size: 37px;
+}
+
+.section .skills .coding:hover{
+    font-weight: 600;
+    background-color: var(--primary);
+    color: whitesmoke;
+}
+
+.section .skills .games:hover{
+    font-weight: 600;
+    background-color: var(--primary);
+    color: whitesmoke;
+}
+
+.section .skills .gym:hover{
+    font-weight: 600;
+    background-color: var(--primary);
+    color: whitesmoke;
+}
+
+.section .skills i{
+    padding-top: 8px;
+    color: black;
+    font-size: 30px;   
+}    
+
+ 
+/* .section .skills .games, .gym{
+    padding: 4.82rem;
+} */
+
+/* .section .skills .advance{
+    padding:4.92rem;
+} */
+
+  
+/** lists **/
+
+.unordered {
+    list-style: none;
+}
+
+.list-inline li {
+    display: inline;
+    padding: 0rem 0.5rem;
+}
+
+
+/** footer **/
+.footer {
+    background-color: var(--primary);
+    color: white;
+    padding: 2rem 0rem;
+    border-top-right-radius: 1rem;
+    text-align: center;
+}
+.footer .heading {
+    font-weight: bold;
+    font-size: larger;
+  
+}
+
+.footer ul {
+    padding-inline-start: 0px;
+}
+
+
+      
+
+/*          Responsive Layout           */
+
+/* @media all and (max-width:1300px){
+
+    html{
+        width: 1300px;
+    }
+    body {
+       width: 1300px;
+    }
+    .hero {
+        background-color: var(--primary);
+        max-height: 35.4vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
+@media all and (max-width:992px){
+
+    html{
+        width: 992px;
+    }
+    body {
+       width: 992px;
+    }
+    .hero {
+        background-color: var(--primary);
+        max-height: 35.4vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+ */
+@media all and (max-width:768px){
+
+    html{
+        width: 768px;
+    }
+    body {
+       width: 768px;
+    }
+    /* .navigation .nav-brand{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        font-size: 30px;
+    }
+    .hero {
+        background-color: var(--primary);
+        max-height: 42.5vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding-top: 8rem;
+        }
+
+    .hero img {
+        max-width: 489px;
+        margin: auto;
+        display: block;
+    } */
+} 

@@ -1,0 +1,124 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+main{
+    background: linear-gradient(to right, #c6ffdd, #fbd786, #f7797d); 
+}
+#navbar{
+    border-right: 0.5px solid  black;
+    max-width: 350px;
+    background-color:whitesmoke;
+    position: fixed;
+}
+header{
+    margin: 10px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 28.8px;
+    font-weight: 400;
+}
+
+.nav-ul{
+    color: black;
+    list-style-type: none;
+    margin-top:15px;
+    height: 600px;
+    overflow-y:auto;
+    overflow-x: hidden;
+    padding:0;
+    
+}
+.nav-item .nav-link{
+    font-size: 25px;
+    color: black;
+    border-top: 2px solid black;
+}
+.nav-item{
+    justify-content: center;
+    align-items: center;
+}
+#main-doc{
+    position: absolute;
+     margin-left: 360px;
+     margin-bottom: 120px;
+     padding: 20px;
+    }
+.main-section{
+   
+    margin:10px 10px 5px 10px;
+}
+.main-section header{
+    text-align: left;
+    font-size: 30px;
+    font-family: cursive;
+    text-decoration: underline;
+}
+.main-section p{
+    font-family: 'Merienda One', cursive;
+    text-align: left;
+    font-size: 25px;
+    margin-left: 50px;
+}
+.main-section li{
+    margin-left: 80px;
+    font-family: 'Merienda One', cursive;
+    text-align: justify;
+    font-size: 20px;
+}
+.main-section code{
+    color: black;
+    padding: 5px;
+    display: block;
+    margin-left:80px;
+    font-size: 15px;
+    font-family: cursive;   
+}
+
+
+@media all and (max-width:806px)
+{
+    #navbar{
+        max-width: 100%;
+        border-right:none; 
+        position: relative;
+        display: block;
+    }
+    .nav-ul{
+        display: block;
+        border:1px solid black;
+        width: 100%;
+        margin: 0px;
+        height: 300px;
+       overflow-y:auto;
+       overflow-x: hidden;
+       padding:0;
+    }
+    #navbar  header{
+        margin: 0px;
+      }
+    #main-doc{
+        margin: 0;
+        padding: 10px;
+    }
+    main{
+        width: 806px;
+    }
+  
+}
+@media all and (max-width:392px)
+{
+     html{
+         width: 392px;
+     }
+    #navbar{
+        width:500px;
+        border-right:none; 
+        position: relative;
+        display: block;
+    }
+    main{
+        width: 392px;
+    }
+    
+}

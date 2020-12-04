@@ -1,0 +1,8 @@
+@media all and (max-width:1200px)
+{
+    .navbar{
+        background: linear-gradient(to right, #ffefba, #ffffff);
+        color:black;
+        font-size: 25px;
+    }
+}

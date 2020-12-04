@@ -1,0 +1,186 @@
+*{
+    box-sizing: border-box;
+}
+
+body
+{
+    background: rgb(194, 161, 161) url("healthy.jpg") ; 
+    background-blend-mode: screen;
+    margin: 20px auto;
+    font-family: 'Times New Roman', Times, serif;
+    
+    
+}
+.wrapper{
+              background-color: whitesmoke;
+              margin: 0 auto ;
+              width:800px;   
+              text-align: left;  
+              border-radius: 20px;
+              padding:20px;
+              border: 2px solid black;
+       }
+header{
+        padding: 30px;
+}
+header > .title{
+        font-size: 1em;
+        text-align: center;
+        background-color: black;
+        font-family: Arial, Helvetica, sans-serif;
+        color: blanchedalmond;
+        border-radius: 20px;
+}
+ .image{
+    
+   display: block;
+    width: 48%;
+    border-radius: 15%;
+    float: center;
+}
+h3{
+    font-size: 30px;
+    font-family: cursive;
+}
+p{
+    font-size: 15px;
+
+}
+.text{
+        font-size: 15px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-style: normal;
+        color: rgb(23, 32, 16);
+}
+section{
+        width:70%;
+         float: left;
+         padding: 30px 0;
+       
+}
+h2,h3{
+    margin:0;
+}
+aside{
+         width:30%;
+         float: right;
+         background-color: #fdd761;
+         padding: 20px;
+         font-family: cursive ;
+         
+}
+aside h3{
+    color: tomato;
+    font-size: 25px;
+    background-color: thistle;
+    padding: 10px;
+}
+main{
+    padding: 40px;
+    overflow: hidden;
+}
+.video{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: fit-content;
+}
+.fact{
+    border: 2px solid black;
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+} 
+footer{
+    border-top: 1px solid black;
+    text-align: center;
+    padding: 20px;
+    
+    
+}
+
+#refrence{
+  padding:20px
+
+}
+#nutrition{
+    padding: 20px;
+}
+@media screen and (max-width:999px){
+    .wrapper{
+         width:500px;
+         text-align: left;
+         padding: 5px;
+    }
+    aside{
+        width:100%;
+        background-color: #fdd761;
+        padding: 4px;
+        margin:auto;
+        font-family: cursive ;
+        text-align: left;
+        
+    }
+    .text{
+        font-size: 15px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-style: normal;
+        color: rgb(23, 32, 16);
+    }
+   
+}
+@media screen and (max-width:599px){
+    .wrapper{
+         width:300px;
+         text-align: left;
+         padding: 5px;
+    }
+    aside{
+        width:100%;
+        background-color: #fdd761;
+        padding: 4px;
+        margin:auto;
+        font-family: cursive ;
+        text-align: left;
+    }
+    #aka{
+        display:inline;
+    }
+    .text{
+        font-size: 13px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-style: normal;
+        color: rgb(23, 32, 16);
+        text-align: justify;
+        
+    }
+   
+}
+@media screen and (max-width:399px){
+    .wrapper{
+         width:300px;
+         text-align: left;
+         padding: 5px;
+    }
+    aside{
+        width:100%;
+        background-color: #fdd761;
+        padding: 4px;
+        margin:auto;
+        font-family: cursive ;
+        text-align: left;
+        
+    }
+    .text{
+        font-size: 12px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-style: normal;
+        color: rgb(23, 32, 16);
+    }
+   
+}
+.animate{
+    transition: width 0.4s ease-in-out;
+}

@@ -1,0 +1,154 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    background: linear-gradient(to right, #ffefba, #ffffff);
+}
+.navbar{
+    background-color: #e3f2fd;
+    color: black;
+}
+.navbar .nav-item .nav-link{
+    color: black;
+    font-size: 25px ;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    padding: 8px;
+}
+.navbar-toggler-icon i{
+    font-size: 25px;
+}
+
+.nav-item i{
+    font-size: 20px;
+    padding-right: 4px;
+}
+ .btn #submit{
+     color:black
+ }
+ .navbar button:focus{
+    outline:none;
+}
+ #video{
+     display:block;
+     margin: auto;
+ }
+ #select{
+     display: block;
+     margin: auto;
+ }
+#selectcontain{
+    margin: 10px;
+    padding: 10px;
+}
+.brand form{
+    margin: 0px auto;
+    
+}
+.brand input{
+    width: 30%;
+}
+
+@media  (max-width:992px)
+{
+    html{
+        width: 992px;
+    }
+    #header >  nav{
+        position: relative;
+    }
+    .navbar-brand{
+        margin:0px auto;
+        font-size: 35px;
+    }
+    .navbar .nav-item .nav-link{
+        color: black;
+        font-size: 25px ;
+        padding: 8px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 300;
+    }
+    #selectcontain{
+        margin: 5px;
+        padding: 5px;
+    }
+    #selectcontain h3{
+        font-size:25px;
+    }
+    #selectcontain h4{
+        font-size:21px;
+    }
+    #selectcontain p{
+        font-size:23px;
+    }
+    
+
+}
+@media  (max-width:768px)
+{
+   
+    #selectcontain{
+        margin: 5px;
+        padding: 5px;
+    }
+    #selectcontain h3{
+        font-size:30px;
+    }
+    #selectcontain h4{
+        font-size:25px;
+    }
+    #selectcontain p{
+        font-size:23px;
+    }
+}
+@media  (max-width:492px)
+{
+    .brand input{
+        width: 50%;
+    }
+    html{
+        width: 992px;
+    }
+    .brand h1 {
+        font-size: 46px;
+    }
+    .brand form{
+        width: 50%;
+    }
+    .brand button{
+     font-size: 30px;
+ }
+    #header >  nav{
+        position: relative;
+    }
+    .navbar-brand{
+        margin:0px auto;
+        font-size: 35px;
+    }
+    .navbar .nav-item .nav-link{
+        color: black;
+        font-size: 25px ;
+        padding: 8px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 300;
+    }
+    #selectcontain{
+        margin: 5px;
+        padding: 5px;
+    }
+    #selectcontain h3{
+        font-size:25px;
+    }
+    #selectcontain h4{
+        font-size:21px;
+    }
+    #selectcontain p{
+        font-size:23px;
+    }
+    
+
+}

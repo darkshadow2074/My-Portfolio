@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding:0px;
+}
+:root {
+    --primary-color: #dc2626;
+    --off-white:#E0E7FF;
+    --light-pink: #FEE2E2;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px;
+    background-color: var(--light-pink);
+}
+
+hr {
+    margin: 2rem 0rem;
+    color: whitesmoke;
+    margin: auto;
+    width: 45%;
+}
+
+/** spaces **/
+
+.margin-md {
+    margin: 2rem;
+}
+
+/** container **/
+.container {
+    padding: 0rem 1rem;
+}
+
+.container-center {
+    max-width: 600px;
+    margin: auto;
+}
+
+/** navigation **/
+
+.navigation {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+}
+
+.navigation .nav-brand {
+    font-weight: bold;
+}
+
+.navigation .link {
+    color: white;
+}
+
+.navigation .link-active {
+    font-weight: bold;
+}
+
+/** header **/
+
+.hero {
+    padding: 2rem;
+    padding-top: 4rem;
+    max-height: 51.2vh;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.hero .hero-section{
+    margin: auto;
+}
+.hero .hero-section .animation i{
+    font-size: 1.4rem;
+    
+    cursor: pointer;
+}
+
+
+
+.hero .hero-img {
+    max-width: 420px;
+    display: block;
+    margin: auto;
+}
+
+.hero .hero-heading {
+    text-align: center;
+    padding-top: 1rem;
+    color: var(--dark-gray);
+    font-size: 3rem !important;
+    text-shadow: 3px 2px 3px rgba(0, 0, 0, 0.4);
+}
+
+.hero .hero-heading .heading-inverted {
+    color: var(--primary-color);
+}
+
+
+/**            ABOUT           **/
+
+.section .about{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-top: 2rem;
+    line-height: 1.8;
+}
+
+
+.section {
+    padding: 2rem;
+}
+
+.section h1 {
+    text-align: center;
+    font-size: 37px;
+    font-weight: 560;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+
+.section .img-section{
+    min-width: 40%;
+    height: auto;
+    padding-left: 2.5rem;
+
+}
+
+.section .about .about-info{
+    text-align: justify;
+    margin: 0px 1rem 0px 0px;
+    min-width: 451px;
+    font-family:  'Lora', serif;;
+}
+
+.section .about .details{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.section .about-img{
+    max-width: 100%;
+    border-bottom-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+}
+
+/** links **/
+.link {
+    box-sizing: border-box;
+    text-decoration: none;
+    
+    /* margin-top: 5rem;
+    margin-bottom: 1rem; */
+}
+
+.link-primary {
+    background-color: var(--primary-color);
+    border-radius: 0.5rem;
+    color: white !important;
+}
+
+.link-secondary {
+    color: var(--primary-color);
+    border-radius: 0.5rem;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    padding: 8px 0px 8px 8px;
+}
+
+.link-secondary:hover{
+    background-color: var(--primary-color);
+    border-radius: 0.5rem;
+    color: white !important;
+}
+
+/** look into BEM naming convention for CSS **/
+
+/** lists **/
+
+.list-non-bullet {
+    list-style: none;
+}
+
+.list-item-inline {
+    display: inline;
+    padding: 0rem 0.5rem;
+}
+
+
+
+/** sections **/
+
+.section {
+    padding: 2rem;
+}
+
+.section h1 {
+    text-align: center;
+
+}
+
+.ow {
+    background-color: var(--off-white);
+}
+
+
+/*             Projects & Blogs           */
+
+.blog {
+    background-color: var(--primary-color);
+    max-width: 1200px;
+    margin: 4rem auto auto auto;
+    padding-top: 1rem;
+}
+.blog .blog-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    background-color: whitesmoke;
+    margin-top: 2rem;
+}
+
+.blog .blog-container ol{
+    padding: 2rem;
+}
+
+.blog .blog-container a{
+    color: var(--primary-color);
+}
+
+.blog .blog-container small{
+    display: block;
+    padding-top: 1rem;
+    text-align: justify;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.blog .blog-container h2{
+    font-size: 28px;
+    font-weight: 500;
+    color: var(--primary-color);
+    text-align: left;
+    padding-top:8px
+}
+
+.blog .blog-container .link-project{
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    flex-direction: row;
+}
+
+.blog .blog-container .link-project a{
+    margin-right: 1rem !important;
+    padding: 1rem;
+}
+
+.blog .blog-container p{
+    font-size: 17px;
+    color: var(--primary-color);
+    font-weight: 400;
+    margin-top: 10px;
+}
+li::marker{
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--primary-color);
+    text-align: left;
+}
+
+/** footers **/
+
+.footer {
+    background-color: var(--primary-color);
+    padding: 2rem 0rem 0rem 0rem;
+    text-align: center;
+    color: white;
+    margin-top: 4rem;
+}
+
+.footer .link {
+    color: white
+}
+
+.footer .footer-header {
+    font-weight: bold;
+    font-size: large;
+}
+
+.footer ul {
+    padding-inline-start: 0px;
+}
+
+.footer .work-together{
+    display: flex;
+    color:whitesmoke;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .work-together h1{
+    font-size: 60px;
+    text-align: center;
+    font-weight: 500 !important;
+}
+
+.footer .work-together .logo{
+
+    font-size: 55px;
+    text-align: center;
+}
+
+.footer .work-together p{
+    font-size: 35px;
+    text-align: center;
+}
+
+.footer .copyright{
+    background-color: red;
+    margin-top: 1.7rem;
+    padding: 1rem;
+    text-align: center;    
+}
+.footer .copyright p{
+    opacity: 0.7;
+}

@@ -1,0 +1,2194 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding:0px;
+}
+:root {
+    --primary-color: #dc2626;
+    --off-white:#E0E7FF;
+    --light-pink: #FEE2E2;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px;
+    background-color: var(--light-pink);
+}
+
+hr {
+    margin: 2rem 0rem;
+    color: whitesmoke;
+    margin: auto;
+    width: 45%;
+}
+
+/** spaces **/
+
+.margin-md {
+    margin: 2rem;
+}
+
+/** container **/
+.container {
+    padding: 0rem 1rem;
+}
+
+.container-center {
+    max-width: 600px;
+    margin: auto;
+}
+
+/** navigation **/
+
+.navigation {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+}
+
+.navigation .nav-brand {
+    font-weight: bold;
+}
+
+.navigation .link {
+    color: white;
+}
+
+.navigation .link-active {
+    font-weight: bold;
+}
+
+/** header **/
+
+.hero {
+    padding: 2rem;
+    padding-top: 4rem;
+    max-height: 58.2vh;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.hero .hero-section{
+    margin: auto;
+}
+.hero .hero-section .animation i{
+    font-size: 1.4rem;
+    
+    cursor: pointer;
+}
+
+
+
+.hero .hero-img {
+    max-width: 460px;
+    display: block;
+    margin: auto;
+}
+
+.hero .hero-heading {
+    text-align: center;
+    padding-top: 1rem;
+    color: var(--dark-gray);
+    font-size: 3rem ;
+    text-shadow: 3px 2px 3px rgba(0, 0, 0, 0.4);
+}
+
+.hero .hero-heading .heading-inverted {
+    color: var(--primary-color);
+}
+
+
+/**            ABOUT           **/
+
+.section .about{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-top: 2rem;
+    line-height: 1.8;
+}
+
+
+.section {
+    padding: 2rem;
+}
+
+.section h1 {
+    text-align: center;
+    font-size: 37px;
+    font-weight: 560;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+
+.section .img-section{
+    min-width: 40%;
+    height: auto;
+    padding-left: 2.5rem;
+
+}
+
+.section .about .about-info{
+    text-align: justify;
+    margin: 0px 1rem 0px 0px;
+    min-width: 451px;
+    font-family:  'Lora', serif;;
+}
+
+.section .about .details{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.section .about .basic-details{
+    color: #dc2626; 
+    font-weight: 600;
+    margin: 0px;
+}
+
+.section .about-img{
+    max-width: 100%;
+    border-bottom-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+}
+
+/*               Hobbies            */
+.hobbies{
+    background-color: var(--primary-color);
+    max-width: 1200px;
+    margin: 5rem auto auto auto;
+}
+
+.hobbies .hobbies-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 2rem;
+}
+
+.section  .hobbies-list .gaming,.coding,.gym{
+
+    background-color: whitesmoke;
+    color: var(--primary-color);
+    min-width: 60%;
+    padding: 4.97rem;
+    font-size: 27px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-shadow: 3px 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+.section   .hobbies-list  p{
+
+    margin: 0px !important;
+}
+
+.section .hobbies-list .gaming:hover{
+    background-color: var(--primary-color);
+    color: black;
+}
+
+.section  .hobbies-list .coding:hover{
+    background-color: var(--primary-color);
+    color: black;
+}
+
+.section .hobbies-list .gym:hover{
+    background-color: var(--primary-color);
+    color: black;
+}
+
+.section .hobbies-list i{
+    font-size: 30px;
+    padding-top: 10px;
+}
+
+/*           EDUCATION LIST           */
+
+.education{
+    background-color: var(--primary-color);
+    max-width: 1200px;
+    margin: 4rem auto auto auto;
+}
+
+.education .education-list{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-direction: row;
+    padding: 2rem;
+    text-align: center;
+}
+
+.section  .education-list .primary-education,.secondary-education,.university-education{
+
+    background-color: whitesmoke;
+    color: var(--primary-color);
+    min-width: 60%;
+    padding: 5rem;
+    font-size: 37px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-shadow: 3px 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+.section   .education-list  p{
+
+    margin: 0px !important;
+}
+
+.section .education-list .primary-education:hover{
+    background-color: var(--primary-color);
+    color: black;
+}
+
+.section  .education-list .secondary-education:hover{
+    background-color: var(--primary-color);
+    color: black;
+}
+
+.section .education-list .university-education:hover{
+    background-color: var(--primary-color);
+    color: black;
+}
+
+.section .education-list .institute-details{
+    margin-top: 8px;
+    text-align: center;
+    font-size: 17px;
+}
+.section .education-list i{
+    font-size: 35px;
+    padding-bottom: 10px;
+}
+
+.section .education-list .institute-details sup{
+    font-size: 10px;
+}
+
+/*           SKILLS           */
+.skills{
+    background-color: var(--primary-color);
+    max-width: 1200px;
+    margin: 5rem auto auto auto;
+}
+
+.skills hr{
+    margin-bottom: 32px !important;
+}
+
+.skills .skills-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.section  .skills-list .skills-1,.skills-2,.skills-3{
+
+    background-color: whitesmoke;
+    color: var(--primary-color);
+    min-width: 60%;
+    padding: 5rem;
+    font-size: 28px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-shadow: 3px 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+.section  .skills-list  p{
+
+    margin: 0px !important;
+}
+
+.section .skills-list .skills-1:hover{
+    background-color: var(--primary-color);
+    color: black;
+}
+
+.section  .skills-list .skills-2:hover{
+    background-color: var(--primary-color);
+    color: black;
+}
+
+.section .skills-list .skills-3:hover{
+    background-color: var(--primary-color);
+    color: black;
+}
+
+.section .skills-list small{
+    opacity: 0.7;
+    color: black;
+    font-size: 20px;
+    padding-top: 8px;
+}
+
+.section .skills-list i{
+    font-size: 30px;
+    padding-top: 15px;
+}
+/** links **/
+.link {
+    box-sizing: border-box;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    /* margin-top: 5rem;
+    margin-bottom: 1rem; */
+}
+
+.link-primary {
+    background-color: var(--primary-color);
+    border-radius: 0.5rem;
+    color: white
+}
+
+.link-secondary {
+    color: var(--primary-color);
+    border-radius: 0.5rem;
+    border: 1px solid var(--primary-color);
+}
+
+/** look into BEM naming convention for CSS **/
+
+/** lists **/
+
+.list-non-bullet {
+    list-style: none;
+}
+
+.list-item-inline {
+    display: inline;
+    padding: 0rem 0.5rem;
+}
+
+
+
+/** sections **/
+
+.section {
+    padding: 2rem;
+}
+
+.section h1 {
+    text-align: center;
+
+}
+
+.ow {
+    background-color: var(--off-white);
+}
+
+
+
+/*            RESUME           */
+.resume{
+    background-color: var(--off-white);
+    max-width: 1200px;
+    margin: 4rem auto auto auto;
+}
+
+.resume .resume-continer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: var(--primary-color);
+}
+
+.resume .resume-continer h2{
+    font-size: 200px;
+    margin-top: 1rem;
+
+}
+
+/*             Projects & Blogs           */
+.projects , .blogs ,.form{
+    background-color: var(--primary-color);
+    max-width: 1200px;
+    margin: 4rem auto auto auto;
+    padding-top: 1rem;
+}
+
+.projects .projects-continer{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+.projects .projects-continer .project-image{
+    width: 500px;
+    margin: 1rem auto 0.5rem auto;
+}
+.projects .projects-continer .project-image img{
+    max-width: 100%;
+    cursor: pointer;
+}
+
+.projects .projects-continer a{
+    background-color: whitesmoke;
+    min-width: 23%;
+    color: var(--primary-color);
+    cursor: pointer;
+    border: 0.5px solid whitesmoke;
+    border-radius: 1rem;
+    padding: 1.3rem;
+    font-size: 19px;
+}
+
+.projects .projects-continer a:hover{
+    background-color: var(--primary-color);
+    color: whitesmoke;
+}
+
+
+.blogs .blogs-continer{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+.blogs .blogs-continer .blog-image{
+    width: 500px;
+    margin: 1rem auto 0.5rem auto;
+}
+.blogs .blogs-continer .blog-image img{
+    max-width: 100%;
+    cursor: pointer;
+}
+
+.blogs .blogs-continer a{
+    background-color: whitesmoke;
+    min-width: 23%;
+    color: var(--primary-color);
+    cursor: pointer;
+    border: 0.5px solid whitesmoke;
+    border-radius: 1rem;
+    padding: 1.3rem;
+    font-size: 19px;
+}
+
+.blogs .blogs-continer a:hover{
+    background-color: var(--primary-color);
+    color: whitesmoke;
+}
+
+.form-container{
+    padding-top: 1rem;
+}
+/** footers **/
+
+.footer {
+    background-color: var(--primary-color);
+    padding: 2rem 0rem 0rem 0rem;
+    text-align: center;
+    color: white;
+    margin-top: 4rem;
+}
+
+.footer .link {
+    color: white
+}
+
+.footer .footer-header {
+    font-weight: bold;
+    font-size: large;
+}
+
+.footer ul {
+    padding-inline-start: 0px;
+}
+
+.footer .work-together{
+    display: flex;
+    color:whitesmoke;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .work-together h1{
+    font-size: 60px;
+    text-align: center;
+    font-weight: 500 !important;
+}
+
+.footer .work-together .logo{
+
+    font-size: 55px;
+    text-align: center;
+}
+
+.footer .work-together p{
+    font-size: 35px;
+    text-align: center;
+}
+
+.footer .copyright{
+    background-color: red;
+    margin-top: 1.7rem;
+    padding: 1rem;
+    text-align: center;    
+}
+.footer .copyright p{
+    opacity: 0.7;
+}
+
+.footer .wrapper{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 3rem;
+}
+
+.wrapper .icon{
+    margin: 20px 0px 0px 0px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2;
+    position: relative;
+}
+.wrapper .icon span{
+    height: 60px;
+    width: 60px;
+    position: relative;
+    display: block;
+    background-color: whitesmoke;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    border-radius: 50%;
+    color: var(--primary-color);
+    z-index: 2;
+}
+
+.wrapper .icon span i{
+    font-size: 25px;
+    line-height: 60px;
+}
+
+.wrapper .icon .tooltip{
+    background-color:whitesmoke;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+    padding: 10px 18px;
+    border-radius: 25px;
+    color: var(--primary-color) !important;
+    position: absolute;
+    top: -50px;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4s cubic-bezier(0.68,-0.55,0.265,1.55);
+}
+
+.wrapper .icon a{
+    color: var(--primary-color) !important;
+}
+
+.wrapper .icon:hover .tooltip{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip{
+    text-shadow: 0px -1px 0px var(--primary-color);
+}
+
+.wrapper .icon .tooltip:before{
+    position: absolute;
+    top: 32px;
+    content: "";
+    height: 15px;
+    width: 15px;
+    bottom: -6px;
+    left: 36%;
+    transform: translateX(50%) rotate(45deg);
+    background-color: whitesmoke;
+}
+
+/*           Responsive Layout  : max width:1024px        */
+
+@media all and (max-width:1024px){
+    html{
+        width: 1024px;
+    }
+    body{width: 1024px;}
+
+    .hero{
+        max-height: 35.5vh;
+    }
+
+    .hobbies .hobbies-list{
+        flex-direction: row;
+    }
+
+    .section .hobbies-list .gaming, .coding, .gym {
+        padding: 4.8rem ;
+        min-width: 50% ;
+        font-size: 32px;
+    }
+
+    .education .education-list{
+        flex-direction: column;
+    }
+
+    .skills .skills-list{
+        flex-direction: column;
+    }
+
+    .section .img-section{
+        min-width: 80%;  
+        height: auto; 
+        padding-left: 3.0rem;
+        margin: 0px auto;
+        align-self: flex-start;
+    }
+
+   
+    .section .about .details{
+        padding-top: 0rem;
+        font-size: 23px;
+    }
+    
+    .hobbies{
+        max-width: 900px;
+    }
+
+    .education{
+        max-width: 900px;
+        margin: 4rem auto auto auto;
+    }
+
+    .education .education-list{
+
+        flex-direction: column;
+        padding: 1.8rem;
+        text-align: center;
+    }
+
+    .section  .education-list .primary-education,.secondary-education,.university-education{
+        font-size: 35px;
+    }
+
+    .section .education-list .institute-details{
+        font-size: 23px;
+    }
+
+    .section .education-list .span{
+        font-size: 20px;
+    }
+
+    .skills{
+        max-width: 900px;
+    }
+
+    .skills .skills-list{
+        flex-direction: column;
+    }
+
+    .skills .last{
+        padding-bottom: 24px;
+    }
+
+    .section  .skills-list .skills-1,.skills-2,.skills-3{
+        padding: 4.5rem ;
+        min-width: 70% ;
+        font-size: 32px ;
+    }
+
+    .section  .skills-list i{
+        font-size: 35px;
+    }
+
+    .section  .skills-list small{
+        font-size: 24px;
+    }
+
+    .resume{
+        max-width: 600px;
+    }
+
+    .resume .resume-continer h2{
+        font-size: 150px;
+    }
+
+    .resume .resume-continer p{
+        font-size: 32px;
+    }
+
+    .projects , .blogs ,.form{
+        max-width: 600px;
+    }
+
+    .projects .projects-continer a{
+        font-size: 28px;
+    }
+
+    .projects .projects-continer .project-link{
+        margin-top: 10px;
+    }
+
+    .blogs .blogs-continer a{
+        font-size: 28px;
+    }
+
+    .blogs .blogs-continer .project-link{
+        margin-top: 10px;
+    }
+
+    .form-container .submit {
+        font-size: 25px;
+    }
+
+    input,textarea{
+        width: 95%;
+    }
+
+    .footer .copyright{
+        font-size: 28px;
+    }
+}
+
+
+/*           Responsive Layout  : max width:768px        */
+
+
+@media all and (max-width:768px){
+
+    body{
+        width: 769px;
+        max-width: 100%;
+    }
+    html{
+        width: 769px;
+        max-width: 100%;
+    }
+
+    .navigation .nav-brand {
+        font-weight: bold;
+        margin: auto;
+    }
+
+    .hobbies .hobbies-list{
+        flex-direction: column;
+    }
+
+    .section .hobbies-list .gaming, .coding{
+        padding: 6.7rem ;
+        min-width: 50% ;
+        font-size: 32px;
+    }
+
+    .section .hobbies-list .gym{
+        padding: 7.88rem;
+    }
+
+    .education .education-list{
+        flex-direction: column;
+    }
+
+    .skills .skills-list{
+        flex-direction: column;
+    }
+
+    .navigation{
+        flex-direction: column;
+        font-size: 24px;
+    }
+
+    .navigation .nav-pills{
+        padding-top: 13px;
+    }
+
+    .hero{
+        flex-direction: column;
+        max-height: 49vh;
+    }
+
+    .hero .hero-heading{
+        padding-top: 1.5rem;
+    }
+
+    .hero .hero-img {
+        max-width: 460px;
+        display: block;
+        margin: auto;
+        padding-top: 1rem;
+    }
+
+    .section .about{
+         flex-direction: column-reverse;
+    }
+
+    .section .img-section{
+        min-width: 30%;   
+        padding-left: 0px;
+        margin: auto;
+    }
+
+    .section .img-section img{
+        border-radius: 50%;
+    }
+   
+    .section .about .details{
+        padding-top: 0.5rem;
+        font-size: 23px;
+    }
+    
+    .hobbies{
+        max-width: 600px;
+    }
+
+    .hobbies .hobbies-list{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 1.9rem;
+    }
+
+    .section  .hobbies-list .gaming{
+        padding: 6.29rem;
+    }
+
+    section .hobbies h1{
+        font-size: 27px;
+    }
+
+    .education{
+        max-width: 600px;
+        margin: 4rem auto auto auto;
+    }
+
+    .education .education-list{
+
+        flex-direction: column;
+        padding: 1.8rem;
+        text-align: center;
+    }
+
+    .section  .education-list .primary-education,.secondary-education,.university-education{
+        font-size: 35px;
+    }
+
+    .section .education-list .institute-details{
+        font-size: 23px;
+    }
+
+    .section .education-list .span{
+        font-size: 20px;
+    }
+
+    .skills{
+        max-width: 600px;
+    }
+
+    .skills .skills-list{
+        flex-direction: column;
+    }
+
+    .skills .last{
+        padding-bottom: 24px;
+    }
+
+    .section  .skills-list .skills-1,.skills-2,.skills-3{
+        padding: 4.5rem;
+        min-width: 70%;
+        font-size: 32px;
+    }
+
+    .section  .skills-list i{
+        font-size: 35px;
+    }
+
+    .section  .skills-list small{
+        font-size: 24px;
+    }
+
+    .resume{
+        max-width: 600px;
+    }
+
+    .resume .resume-continer h2{
+        font-size: 150px;
+    }
+
+    .resume .resume-continer p{
+        font-size: 32px;
+    }
+
+    .projects , .blogs ,.form{
+        max-width: 600px;
+    }
+
+    .projects .projects-continer a{
+        font-size: 28px;
+    }
+
+    .projects .projects-continer .project-link{
+        margin-top: 10px;
+    }
+
+    .blogs .blogs-continer a{
+        font-size: 28px;
+    }
+
+    .blogs .blogs-continer .project-link{
+        margin-top: 10px;
+    }
+
+    .form-container .submit {
+        font-size: 25px;
+    }
+
+    input,textarea{
+        width: 95%;
+    }
+
+    .footer .copyright{
+        font-size: 24px;
+    }
+}
+
+
+/*           Responsive Layout  : max width:543px        */
+
+
+
+@media all and (max-width:612px){
+
+    body{
+        width: 612px;
+        max-width: 100%;
+    }
+    html{
+        width: 612px;
+        max-width: 100%;
+    }
+
+    .navigation{
+        flex-direction: column;
+        font-size: 24px;
+    }
+
+    .navigation .nav-brand {
+        font-weight: bold;
+        margin: auto;
+    }
+
+    .navigation .nav-pills{
+        padding-top: 13px;
+        font-size: 18px;
+    }
+
+    .hobbies .hobbies-list{
+        flex-direction: column;
+    }
+
+    .section .hobbies-list .gaming, .coding{
+        padding: 6.7rem ;
+        min-width: 50% ;
+        font-size: 32px;
+    }
+
+    .section .hobbies-list .gym{
+        padding: 7.88rem;
+    }
+
+    .education .education-list{
+        flex-direction: column;
+    }
+
+    .skills .skills-list{
+        flex-direction: column;
+    }
+
+   .hero{
+        flex-direction: column;
+        max-height: 49vh;
+    }
+
+    .hero .hero-heading{
+        padding-top: 1.5rem;
+    }
+
+    .hero .hero-img {
+        max-width: 460px;
+        display: block;
+        margin: auto;
+        padding-top: 1rem;
+    }
+
+    .section .about{
+         flex-direction: column-reverse;
+    }
+
+    .section .img-section{
+        min-width: 30%;   
+        padding-left: 0px;
+        margin: auto;
+    }
+
+    .section .img-section img{
+        border-radius: 50%;
+    }
+   
+    .section .about .details{
+        padding-top: 0.5rem;
+        font-size: 23px;
+    }
+    
+    .hobbies{
+        max-width: 450px;
+    }
+
+    .hobbies .hobbies-list{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 1.9rem;
+    }
+
+    .section  .hobbies-list .gaming{
+        padding: 6.29rem;
+    }
+
+    section .hobbies h1{
+        font-size: 27px;
+    }
+
+    .education{
+        max-width: 450px;
+        margin: 4rem auto auto auto;
+    }
+
+    .education .education-list{
+
+        flex-direction: column;
+        padding: 1.8rem;
+        text-align: center;
+    }
+
+    .section  .education-list .primary-education,.secondary-education,.university-education{
+        font-size: 35px;
+    }
+
+    .section .education-list .institute-details{
+        font-size: 23px;
+    }
+
+    .section .education-list .span{
+        font-size: 20px;
+    }
+
+    .skills{
+        max-width: 450px;
+    }
+
+    .skills .skills-list{
+        flex-direction: column;
+    }
+
+    .skills .last{
+        padding-bottom: 24px;
+    }
+
+    .section  .skills-list .skills-1,.skills-2,.skills-3{
+        padding: 4.5rem;
+        min-width: 100%;
+        font-size: 32px;
+    }
+
+    .section  .skills-list i{
+        font-size: 35px;
+    }
+
+    .section  .skills-list small{
+        font-size: 24px;
+    }
+
+    .resume{
+        max-width: 450px;
+    }
+
+    .resume .resume-continer h2{
+        font-size: 150px;
+    }
+
+    .resume .resume-continer p{
+        font-size: 32px;
+    }
+
+    .projects , .blogs ,.form{
+        max-width: 450px;
+    }
+
+    .projects .projects-continer .project-image {
+        width: 370px;
+    }
+
+    .projects .projects-continer a{
+        font-size: 28px;
+    }
+
+    .projects .projects-continer .project-link{
+        margin-top: 10px;
+    }
+
+    .blogs .blogs-continer a{
+        font-size: 28px;
+    }
+
+    .blogs .blogs-continer .blog-image {
+        width: 370px;
+    }
+
+    .blogs .blogs-continer .project-link{
+        margin-top: 10px;
+    }
+
+    .form-container .submit {
+        font-size: 25px;
+    }
+
+    input,textarea{
+        width: 95%;
+    }
+
+    .footer .copyright{
+        font-size: 18px;
+    }
+}
+
+/* @media all and (max-width:523px){
+
+    body{
+        width: 523px;
+        max-width: 100%;
+    }
+    html{
+        width: 523px;
+        max-width: 100%;
+    }
+
+    .navigation{
+        flex-direction: column;
+        font-size: 24px;
+    }
+
+    .navigation .nav-brand {
+        font-weight: bold;
+        margin: auto;
+    }
+
+    .navigation .nav-pills{
+        padding-top: 13px;
+        font-size: 18px;
+    }
+
+    .hobbies .hobbies-list{
+        flex-direction: column;
+    }
+
+    .section .hobbies-list .gaming, .coding{
+        padding: 6.7rem ;
+        min-width: 50% ;
+        font-size: 32px;
+    }
+
+    .section .hobbies-list .gym{
+        padding: 7.88rem;
+    }
+
+    .education .education-list{
+        flex-direction: column;
+    }
+
+    .skills .skills-list{
+        flex-direction: column;
+    }
+
+   .hero{
+        flex-direction: column;
+        max-height: 49vh;
+    }
+
+    .hero .hero-heading{
+        padding-top: 1.5rem;
+    }
+
+    .hero .hero-img {
+        max-width: 460px;
+        display: block;
+        margin: auto;
+        padding-top: 1rem;
+    }
+
+    .section .about{
+         flex-direction: column-reverse;
+    }
+
+    .section .img-section{
+        min-width: 30%;   
+        padding-left: 0px;
+        margin: auto;
+    }
+
+    .section .img-section img{
+        border-radius: 50%;
+    }
+   
+    .section .about .details{
+        padding-top: 0.5rem;
+        font-size: 23px;
+    }
+    
+    .hobbies{
+        max-width: 450px;
+    }
+
+    .hobbies .hobbies-list{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 1.9rem;
+    }
+
+    .section  .hobbies-list .gaming{
+        padding: 6.29rem;
+    }
+
+    section .hobbies h1{
+        font-size: 27px;
+    }
+
+    .education{
+        max-width: 450px;
+        margin: 4rem auto auto auto;
+    }
+
+    .education .education-list{
+
+        flex-direction: column;
+        padding: 1.8rem;
+        text-align: center;
+    }
+
+    .section  .education-list .primary-education,.secondary-education,.university-education{
+        font-size: 35px;
+    }
+
+    .section .education-list .institute-details{
+        font-size: 23px;
+    }
+
+    .section .education-list .span{
+        font-size: 20px;
+    }
+
+    .skills{
+        max-width: 450px;
+    }
+
+    .skills .skills-list{
+        flex-direction: column;
+    }
+
+    .skills .last{
+        padding-bottom: 24px;
+    }
+
+    .section  .skills-list .skills-1,.skills-2,.skills-3{
+        padding: 4.5rem;
+        min-width: 100%;
+        font-size: 32px;
+    }
+
+    .section  .skills-list i{
+        font-size: 35px;
+    }
+
+    .section  .skills-list small{
+        font-size: 24px;
+    }
+
+    .resume{
+        max-width: 450px;
+    }
+
+    .resume .resume-continer h2{
+        font-size: 150px;
+    }
+
+    .resume .resume-continer p{
+        font-size: 32px;
+    }
+
+    .projects , .blogs ,.form{
+        max-width: 450px;
+    }
+
+    .projects .projects-continer .project-image {
+        width: 370px;
+    }
+
+    .projects .projects-continer a{
+        font-size: 28px;
+    }
+
+    .projects .projects-continer .project-link{
+        margin-top: 10px;
+    }
+
+    .blogs .blogs-continer a{
+        font-size: 28px;
+    }
+
+    .blogs .blogs-continer .blog-image {
+        width: 370px;
+    }
+
+    .blogs .blogs-continer .project-link{
+        margin-top: 10px;
+    }
+
+    .form-container .submit {
+        font-size: 25px;
+    }
+
+    input,textarea{
+        width: 95%;
+    }
+
+    .footer .copyright{
+        font-size: 18px;
+    }
+} */
+
+@media all and (max-width:512px){
+
+    body{
+        width: 512px;
+        max-width: 100%;
+    }
+    html{
+        width: 512px;
+        max-width: 100%;
+    }
+
+    .navigation{
+        flex-direction: column;
+        font-size: 24px;
+    }
+
+    .navigation .nav-brand {
+        font-weight: bold;
+        margin: auto;
+    }
+
+    .navigation .nav-pills{
+        padding-top: 10px;
+        font-size: 18px;
+    }
+
+    .hobbies .hobbies-list{
+        flex-direction: column;
+    }
+
+    .section .hobbies-list .gaming, .coding{
+        padding: 6.7rem ;
+        min-width: 50% ;
+        font-size: 32px;
+    }
+
+    .section .hobbies-list .gym{
+        padding: 7.88rem;
+    }
+
+    .education .education-list{
+        flex-direction: column;
+    }
+
+    .skills .skills-list{
+        flex-direction: column;
+    }
+
+   .hero{
+        flex-direction: column;
+        max-height: 41.9vh;
+    }
+
+    .hero .hero-heading{
+        padding-top: 1.5rem;
+        font-size: 2.4rem;
+    }
+
+    .hero .hero-img {
+        max-width: 380px;
+        display: block;
+        margin: auto;
+        padding-top: 1rem;
+    }
+
+
+    .section .about{
+         flex-direction: column-reverse;
+    }
+
+    .section .about .about-info {
+        text-align: justify;
+        margin: 0px;
+        min-width: 381px;
+        font-family: 'Lora', serif;
+    }
+
+    .section .img-section{
+        min-width: 30%;   
+        padding-left: 0px;
+        margin: auto;
+    }
+
+    .section .img-section img{
+        border-radius: 50%;
+    }
+   
+    .section .about .details{
+        padding-top: 0.5rem;
+        font-size: 23px;
+    }
+    
+    .hobbies{
+        max-width: 100%;
+    }
+
+    .hobbies .hobbies-list{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 1.9rem;
+    }
+
+    .section  .hobbies-list .gaming{
+        padding: 6.29rem;
+    }
+
+    section .hobbies h1{
+        font-size: 27px;
+    }
+
+    .education{
+        max-width: 100%;
+        margin: 4rem auto auto auto;
+    }
+
+    .education .education-list{
+
+        flex-direction: column;
+        padding: 1.8rem;
+        text-align: center;
+    }
+
+    .section  .education-list .primary-education,.secondary-education,.university-education{
+        font-size: 35px;
+    }
+
+    .section .education-list .institute-details{
+        font-size: 23px;
+    }
+
+    .section .education-list .span{
+        font-size: 20px;
+    }
+
+    .skills{
+        max-width: 100%;
+    }
+
+    .skills .skills-list{
+        flex-direction: column;
+    }
+
+    .skills .last{
+        padding-bottom: 24px;
+    }
+
+    .section  .skills-list .skills-1,.skills-2,.skills-3{
+        padding: 4.5rem;
+        min-width: 100%;
+        font-size: 32px;
+    }
+
+    .section  .skills-list i{
+        font-size: 35px;
+    }
+
+    .section  .skills-list small{
+        font-size: 24px;
+    }
+
+    .resume{
+        max-width: 100%;
+    }
+
+    .resume .resume-continer h2{
+        font-size: 150px;
+    }
+
+    .resume .resume-continer p{
+        font-size: 32px;
+    }
+
+    .projects , .blogs ,.form{
+        max-width: 100%;
+    }
+
+    .projects .projects-continer .project-image {
+        width: 370px;
+    }
+
+    .projects .projects-continer a{
+        font-size: 28px;
+    }
+
+    .projects .projects-continer .project-link{
+        margin-top: 10px;
+    }
+
+    .blogs .blogs-continer a{
+        font-size: 28px;
+    }
+
+    .blogs .blogs-continer .blog-image {
+        width: 370px;
+    }
+
+    .blogs .blogs-continer .project-link{
+        margin-top: 10px;
+    }
+
+    .form-container .submit {
+        font-size: 25px;
+    }
+
+    input,textarea{
+        width: 95%;
+    }
+
+    .footer .copyright{
+        font-size: 18px;
+    }
+}
+
+
+
+@media all and (max-width:430px){
+
+    body{
+        width: 430px;
+        max-width: 100%;
+    }
+    html{
+        width: 430px;
+        max-width: 100%;
+    }
+
+    .navigation{
+        flex-direction: column;
+        font-size: 20px;
+    }
+
+    .navigation .nav-brand {
+        font-weight: bold;
+        margin: auto;
+    }
+
+    .link{
+        padding: 0.5rem 0.5rem;
+    }
+
+    .navigation .nav-pills{
+        padding-top: 10px;
+        font-size: 17px;
+    }
+
+    .hobbies .hobbies-list{
+        flex-direction: column;
+    }
+
+    .section .hobbies-list .gaming, .coding{
+        padding: 6.7rem ;
+        min-width: 50% ;
+        font-size: 32px;
+    }
+
+    .section .hobbies-list .gym{
+        padding: 7.88rem;
+    }
+
+    .education .education-list{
+        flex-direction: column;
+    }
+
+    .skills .skills-list{
+        flex-direction: column;
+    }
+
+   .hero{
+        flex-direction: column;
+        max-height: 41.9vh;
+    }
+
+    .hero .hero-heading{
+        padding-top: 1.5rem;
+        font-size: 2.4rem;
+    }
+
+    .hero .hero-img {
+        max-width: 300px;
+        display: block;
+        margin: auto;
+        padding-top: 1rem;
+    }
+
+
+    .section .about{
+         flex-direction: column-reverse;
+    }
+
+    .section .about .about-info {
+        text-align: justify;
+        margin: 0px;
+        min-width: 341px;
+        font-family: 'Lora', serif;
+    }
+
+    .section .img-section{
+        min-width: 30%;   
+        padding-left: 0px;
+        margin: auto;
+    }
+
+    .section .img-section img{
+        border-radius: 50%;
+    }
+   
+    .section .about .details{
+        padding-top: 0.5rem;
+        font-size: 23px;
+    }
+    
+    .hobbies{
+        max-width: 100%;
+    }
+
+    .hobbies .hobbies-list{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 1.9rem;
+    }
+
+    .section  .hobbies-list .gaming{
+        padding: 6.29rem;
+    }
+
+    section .hobbies h1{
+        font-size: 27px;
+    }
+
+    .education{
+        max-width: 100%;
+        margin: 4rem auto auto auto;
+    }
+
+    .education .education-list{
+
+        flex-direction: column;
+        padding: 1.8rem;
+        text-align: center;
+    }
+
+    .section  .education-list .primary-education,.secondary-education,.university-education{
+        font-size: 35px;
+    }
+
+    .section .education-list .institute-details{
+        font-size: 23px;
+    }
+
+    .section .education-list .span{
+        font-size: 20px;
+    }
+
+    .skills{
+        max-width: 100%;
+    }
+
+    .skills .skills-list{
+        flex-direction: column;
+    }
+
+    .skills .last{
+        padding-bottom: 24px;
+    }
+
+    .section  .skills-list .skills-1,.skills-2,.skills-3{
+        padding: 3rem;
+        min-width: 100%;
+        font-size: 25px;
+    }
+
+    .section  .skills-list i{
+        font-size: 35px;
+    }
+
+    .section  .skills-list small{
+        font-size: 24px;
+    }
+
+    .resume{
+        max-width: 100%;
+    }
+
+    .resume .resume-continer h2{
+        font-size: 150px;
+    }
+
+    .resume .resume-continer p{
+        font-size: 32px;
+    }
+
+    .projects , .blogs ,.form{
+        max-width: 100%;
+    }
+
+    .projects .projects-continer .project-image {
+        width: 290px;
+    }
+
+    .projects .projects-continer a{
+        font-size: 28px;
+    }
+
+    .projects .projects-continer .project-link{
+        margin-top: 10px;
+    }
+
+    .blogs .blogs-continer a{
+        font-size: 28px;
+    }
+
+    .blogs .blogs-continer .blog-image {
+        width: 290px;
+    }
+
+    .blogs .blogs-continer .project-link{
+        margin-top: 10px;
+    }
+
+    .form-container .submit {
+        font-size: 25px;
+    }
+
+    input,textarea{
+        width: 95%;
+    }
+
+    .footer .copyright{
+        font-size: 18px;
+    }
+}
+
+
+
+@media all and (max-width:392px){
+
+    body{
+        width: 392px;
+        max-width: 100%;
+    }
+    html{
+        width: 392px;
+        max-width: 100%;
+    }
+
+    .navigation{
+        flex-direction: column;
+        font-size: 17px;
+    }
+
+    .navigation .nav-brand {
+        font-weight: bold;
+        margin: auto;
+    }
+
+    .link{
+        padding: 0.5rem 0.5rem;
+    }
+
+    .navigation .nav-pills{
+        padding-top: 10px;
+        font-size: 14px;
+    }
+
+    .hobbies .hobbies-list{
+        flex-direction: column;
+    }
+
+    .section .hobbies-list .gaming, .coding{
+        padding: 6.7rem ;
+        min-width: 50% ;
+        font-size: 32px;
+    }
+
+    .section .hobbies-list .gym{
+        padding: 7.88rem;
+    }
+
+    .education .education-list{
+        flex-direction: column;
+    }
+
+    .skills .skills-list{
+        flex-direction: column;
+    }
+
+   .hero{
+        flex-direction: column;
+        max-height: 41.9vh;
+    }
+
+    .hero .hero-heading{
+        padding-top: 1.5rem;
+        font-size: 2.4rem;
+    }
+
+    .hero .hero-img {
+        max-width: 300px;
+        display: block;
+        margin: auto;
+        padding-top: 1rem;
+    }
+
+
+    .section .about{
+         flex-direction: column-reverse;
+    }
+
+    .section .about .about-info {
+        text-align: center;
+        margin: 0px;
+        min-width: 314px;
+        font-family: 'Lora', serif;
+    }
+
+    .section .img-section{
+        min-width: 30%;   
+        padding-left: 0px;
+        margin: auto;
+    }
+
+    .section .img-section img{
+        border-radius: 50%;
+    }
+   
+    .section .about .details{
+        padding-top: 0.5rem;
+        font-size: 23px;
+    }
+    
+    .section .about .basic-details{
+        font-size: 19px;
+    }
+    .hobbies{
+        max-width: 100%;
+    }
+
+    .hobbies .hobbies-list{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 1.9rem;
+    }
+
+    .section  .hobbies-list .gaming{
+        padding: 6.29rem;
+    }
+
+    section .hobbies h1{
+        font-size: 27px;
+    }
+
+    .education{
+        max-width: 100%;
+        margin: 4rem auto auto auto;
+    }
+
+    .education .education-list{
+
+        flex-direction: column;
+        padding: 1.8rem;
+        text-align: center;
+    }
+
+    .section  .education-list .primary-education,.secondary-education,.university-education{
+        font-size: 35px;
+    }
+
+    .section .education-list .institute-details{
+        font-size: 23px;
+    }
+
+    .section .education-list .span{
+        font-size: 20px;
+    }
+
+    .skills{
+        max-width: 100%;
+    }
+
+    .skills .skills-list{
+        flex-direction: column;
+    }
+
+    .skills .last{
+        padding-bottom: 24px;
+    }
+
+    .section  .skills-list .skills-1,.skills-2,.skills-3{
+        padding: 3rem;
+        min-width: 100%;
+        font-size: 25px;
+    }
+
+    .section  .skills-list i{
+        font-size: 35px;
+    }
+
+    .section  .skills-list small{
+        font-size: 24px;
+    }
+
+    .resume{
+        max-width: 100%;
+    }
+
+    .resume .resume-continer h2{
+        font-size: 150px;
+    }
+
+    .resume .resume-continer p{
+        font-size: 32px;
+    }
+
+    .projects , .blogs ,.form{
+        max-width: 100%;
+    }
+
+    .projects .projects-continer .project-image {
+        width: 290px;
+    }
+
+    .projects .projects-continer a{
+        font-size: 28px;
+    }
+
+    .projects .projects-continer .project-link{
+        margin-top: 10px;
+    }
+
+    .blogs .blogs-continer a{
+        font-size: 28px;
+    }
+
+    .blogs .blogs-continer .blog-image {
+        width: 290px;
+    }
+
+    .blogs .blogs-continer .project-link{
+        margin-top: 10px;
+    }
+
+    .form-container .submit {
+        font-size: 25px;
+    }
+
+    input,textarea{
+        width: 95%;
+    }
+
+    .footer .wrapper{
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    /* .footer .wrapper .github,.linkedin,.instagram,.twitter{
+        margin-top: 2rem;
+    } */
+
+    .footer .wrapper .tooltip{
+        margin-top: 2rem;
+    }
+    .footer .wrapper span{
+        margin-top: 2rem;
+    }
+
+    .footer .copyright{
+        font-size: 18px;
+    }
+}
+
+
+@media all and (max-width:360px){
+    html{
+        width: 360px;
+    }
+    body{
+        width: 360px;
+    }
+    .hero .hero-img {
+        max-width: 292px;
+    }
+    .section .about .about-info {
+        min-width: 295px;
+    }       
+    .section h1{
+        font-size: 30px;
+    }
+    section .education-list p {
+        font-size: 26px;
+    }
+    section .education-list .institute-details{
+        font-size: 18px;
+    }
+    .section .skills-list .skills-1, .skills-2, .skills-3{
+        padding: 2rem;
+    }
+    .resume .resume-continer p {
+        font-size: 29px;
+    }
+    .projects .projects-continer .project-image {
+        width: 240px;
+    }
+    .blogs .blogs-continer .blog-image {
+        width: 240px;
+    }
+}
+
+@media all and (max-width:340px){
+    html{
+        width: 340px;
+    }
+    body{
+        width: 340px;
+    }
+    .link{
+        padding: 0.4rem 0.4rem;
+    }
+    .navigation .nav-pills{
+        padding-top: 10px;
+        font-size: 13px;
+    }
+    .hero{
+        max-height: 38.89vh;
+    }
+    .hero .hero-img {
+        max-width: 256px;
+    }
+    .section .about .about-info {
+        min-width: 256px;
+    }       
+    .section .about .basic-details{
+        margin-top: 4px;
+    }
+    .section h1{
+        font-size: 25px;
+    }
+    section .education-list p {
+        font-size: 20px;
+    }
+    section .education-list .institute-details{
+        font-size: 15px;
+    }
+    .section .skills-list .skills-1, .skills-2, .skills-3{
+        padding: 0.5rem;
+        font-size: 20px;
+    }
+    .resume .resume-continer p {
+        font-size: 25px;
+    }
+    .projects .projects-continer .project-image {
+        width: 240px;
+    }
+    .blogs .blogs-continer .blog-image {
+        width: 240px;
+    }
+    .projects .projects-continer a{
+        min-width: 20%;
+        padding: 1rem;
+        font-size: 17px;
+    }
+    .blogs .blogs-continer a{
+        min-width: 20%;
+        border-radius: 1rem;
+        font-size: 17px;
+    }
+    .form-container .submit{
+        font-size: 17px;
+    }
+    .hobbies .hobbies-list{
+        padding: 1rem;
+    }
+    .section  .hobbies-list .gaming,.coding,.gym{
+        min-width: 50%;
+        padding: 3.97rem;
+        font-size: 18px;
+    }
+    .section .hobbies-list .gym{
+        padding: 4.68rem;
+    }
+    .section .hobbies-list .gaming {
+        padding: 3.6rem;
+    }
+    .footer .work-together h1 {
+        font-size: 40px;
+    }
+}

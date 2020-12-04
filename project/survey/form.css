@@ -1,0 +1,73 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+}
+
+body{
+     background-image: linear-gradient( 115deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7)), url("survey-form-background.jpeg");
+     background-position: center;
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     background-size: cover;
+    }
+   /* #title{
+        font-family: 'Cinzel', serif;
+        font-size: 40px;
+        text-align: center;
+        font-weight: 600;
+        position:relative;
+        top:65px;
+        left:45px;
+        margin-bottom: 10px;
+    }
+   
+     #description{
+        font-family: 'Cinzel', serif;
+        font-size: 18px;
+        text-align: center;
+        color:white;
+        position:relative;
+        top:75px;
+        left:30px;
+       
+    }*/
+    .container{
+        margin: 3.25rem auto 0 auto;
+        top: 40px;
+    }
+    .container #title{
+        font-family: 'Cinzel', serif;
+        font-size: 35px;
+        text-align: center;
+        font-weight: 600;
+        margin-bottom:10px;
+       
+    }
+    .container #description{
+        
+            font-family: 'Cinzel', serif;
+            font-size: 18px;
+            text-align: center;
+            font-weight: 600;
+             margin-bottom:10px;
+             color: whitesmoke;
+    }
+    form{
+        background: rgba(27, 27, 50, 0.8);
+        margin: 0;
+    }
+    #survey-form{
+        padding: 28px;
+        color: white;
+    }
+    .input-textareas{
+        
+        min-height: 120px;
+        width: 100%;
+    
+    }
+    .input-submit{
+        width: 100%;
+        background-color: rgb(47, 196, 47);
+        min-height: 40px;
+    }

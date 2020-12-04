@@ -1,0 +1,87 @@
+body{
+    background: linear-gradient(to right, #ada996, #f2f2f2, #dbdbdb, #eaeaea);    
+     width:100%;
+}
+html{
+    scroll-behavior: smooth;
+}
+.navbar-dark .navbar-brand {
+    color:black;
+    font-weight: 300;
+    font-family: 'Merienda One', cursive;
+    font-size: 28px;
+}
+i{
+   padding:  4px;
+}
+.row{
+    width:100%;
+}
+
+.navbar-nav .nav-item .nav-link{
+    font-weight: 200;
+    color: black;
+    font-size: 27px;
+} 
+.navbar-nav .nav-item .nav-link:hover{
+    color: red;
+}
+
+
+#about p{
+    font-weight: 500;
+    font-family: 'Satisfy', cursive;
+    font-size: 16px;
+}
+#text{
+    font-family: 'Satisfy', cursive;
+    font-weight: 350;
+    }
+@media all and  (min-width:1101px)
+{
+    #text h2{
+        font-family: 'Satisfy', cursive;
+        font-weight: 350;
+        font-size: 2.5rem;
+    }   
+}
+
+@media all and  (max-width:1100px)
+{
+    #text h2{
+        font-family: 'Satisfy', cursive;
+        font-weight: 350;
+        font-size: 2rem;
+    }   
+}
+@media all and  (max-width:900px)
+{
+    #text h2{
+        font-family: 'Satisfy', cursive;
+        font-weight: 350;
+        font-size: 1.8rem;
+    }   
+}
+@media all and  (max-width:800px)
+{
+    #text h2{
+        font-family: 'Satisfy', cursive;
+        font-weight: 350;
+        font-size: 1.5rem;
+    }   
+}
+.carousel-inner img{
+    margin-right: auto;
+    margin-left:auto ;
+    width: 600px;
+    height: 600px;
+}
+#image h1{
+    
+    font-family: 'Merienda One', cursive; 
+    text-shadow: 2px 2px red ;
+        font-weight: 350;
+        font-size: 4rem;
+        margin-bottom: 20px;
+ 
+}
