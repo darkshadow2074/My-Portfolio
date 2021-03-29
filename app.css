@@ -72,7 +72,7 @@ hr {
 .hero {
     padding: 2rem;
     padding-top: 4rem;
-    max-height: 58.2vh;
+    height: 58.4vh;
     background-color: var(--primary-color);
     display: flex;
     justify-content: center;
@@ -100,7 +100,7 @@ hr {
     text-align: center;
     padding-top: 1rem;
     color: var(--dark-gray);
-    font-size: 3rem !important;
+    font-size: 3rem ;
     text-shadow: 3px 2px 3px rgba(0, 0, 0, 0.4);
 }
 
@@ -136,6 +136,7 @@ hr {
     min-width: 40%;
     height: auto;
     padding-left: 2.5rem;
+
 }
 
 .section .about .about-info{
@@ -150,6 +151,12 @@ hr {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+}
+
+.section .about .basic-details{
+    color: #dc2626; 
+    font-weight: 600;
+    margin: 0px;
 }
 
 .section .about-img{
@@ -272,11 +279,6 @@ hr {
     text-align: center;
     font-size: 17px;
 }
-
-.section .education-list .span{
-      opacity: 0.7;
-      font-size: 14px;
-}
 .section .education-list i{
     font-size: 35px;
     padding-bottom: 10px;
@@ -304,7 +306,7 @@ hr {
     flex-direction: row;
 }
 
-.section  .skills-list .gaming,.coding,.gym{
+.section  .skills-list .skills-1,.skills-2,.skills-3{
 
     background-color: whitesmoke;
     color: var(--primary-color);
@@ -325,17 +327,17 @@ hr {
     margin: 0px !important;
 }
 
-.section .skills-list .gaming:hover{
+.section .skills-list .skills-1:hover{
     background-color: var(--primary-color);
     color: black;
 }
 
-.section  .skills-list .coding:hover{
+.section  .skills-list .skills-2:hover{
     background-color: var(--primary-color);
     color: black;
 }
 
-.section .skills-list .gym:hover{
+.section .skills-list .skills-3:hover{
     background-color: var(--primary-color);
     color: black;
 }
@@ -423,11 +425,6 @@ hr {
     font-size: 200px;
     margin-top: 1rem;
 
-}
-
-.resume .resume-continer .resume-font{
-    padding-top: 8px;
-    font-size: 25px;
 }
 
 /*             Projects & Blogs           */
@@ -641,17 +638,3 @@ hr {
     transform: translateX(50%) rotate(45deg);
     background-color: whitesmoke;
 }
-
-/*           Responsive Layout           */
-
-@media all and (max-width:1024px){
-    html{
-        width: 1024px;
-    }
-    body{width: 1024px;}
-
-    .hero{
-        max-height: 35.5vh;
-    }
-}
-
